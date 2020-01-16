@@ -1,5 +1,5 @@
 {% set name = "depinfo" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 00c93bfda74090e0763c2d01a66f723f4db36dbd4e7474698b5a113c47d6a073
+  sha256: b4d052c685f6ac0a5e9972efd317dcd0daa8d65bad69218ea1fda4d607202ca3
 
 build:
   noarch: python
