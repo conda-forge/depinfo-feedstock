@@ -5,7 +5,7 @@ Home: https://github.com/Midnighter/dependency-info
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: List a package's direct dependencies and their versions.
 
