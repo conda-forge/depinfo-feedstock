@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - pip
-    - pipdeptree >=0.13.2
+    - importlib_metadata  # [py<38]
 
 test:
   imports:
@@ -32,8 +32,8 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: List a package's direct dependencies and their versions.
-  description: |
+  summary: List any package's direct dependencies and their versions.
+  description: >
     A utility Python package intended for other library packages.
     Provides a function that when called with your package name,
     will print platform and dependency information.
