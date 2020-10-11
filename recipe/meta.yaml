@@ -10,6 +10,7 @@ source:
   sha256: a6b25e75ef32e317bbb5f750b8a62bbf90aa193ac8328646edac30856063f8bb
 
 build:
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
@@ -20,7 +21,7 @@ requirements:
   run:
     - python >=3.6
     - pip
-    - importlib_metadata  # [py<38]
+    - importlib_metadata
 
 test:
   imports:
