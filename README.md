@@ -5,9 +5,13 @@ Home: https://github.com/Midnighter/dependency-info
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/depinfo-feedstock/blob/master/LICENSE.txt)
 
 Summary: List a package's direct dependencies and their versions.
+
+Development: https://github.com/Midnighter/dependency-info
+
+Documentation: https://github.com/Midnighter/dependency-info
 
 A utility Python package intended for other library packages.
 Provides a function that when called with your package name,
