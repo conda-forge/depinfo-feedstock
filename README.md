@@ -7,15 +7,13 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/depinfo-feedstock/blob/master/LICENSE.txt)
 
-Summary: List a package's direct dependencies and their versions.
+Summary: List any package's direct dependencies and their versions.
 
 Development: https://github.com/Midnighter/dependency-info
 
 Documentation: https://github.com/Midnighter/dependency-info
 
-A utility Python package intended for other library packages.
-Provides a function that when called with your package name,
-will print platform and dependency information.
+A utility Python package intended for other library packages. Provides a function that when called with your package name, will print platform and dependency information.
 
 
 Current build status
@@ -115,9 +113,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
