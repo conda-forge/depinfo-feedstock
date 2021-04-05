@@ -1,5 +1,5 @@
 {% set name = "depinfo" %}
-{% set version = "1.5.4" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f76c97e9f7f302d6f6a725d6640bc9e74ac0ab5ecebe37779ee58a3cd437addb
+  sha256: a6b25e75ef32e317bbb5f750b8a62bbf90aa193ac8328646edac30856063f8bb
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
+    - versioneer-518
   run:
-    - python >=3.5
+    - python >=3.6
     - pip
-    - pipdeptree >=0.13.2
+    - importlib_metadata
 
 test:
   imports:
@@ -32,8 +33,8 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: List a package's direct dependencies and their versions.
-  description: |
+  summary: List any package's direct dependencies and their versions.
+  description: >
     A utility Python package intended for other library packages.
     Provides a function that when called with your package name,
     will print platform and dependency information.
